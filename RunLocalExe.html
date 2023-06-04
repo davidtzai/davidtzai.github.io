@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>See it</p>
+<button onclick="launchExecutable()">Launch Executable</button>
+
+<script language="javascript">
+function launchExecutable() {
+  // Add code here to launch the local executable
+   // Use ActiveX object to launch executable
+  alert('here I am');
+  var shell = new ActiveXObject("WScript.Shell");
+  shell.Run("D:\\AkcmQt\\Release\\ASolid.exe");
+}
+</script>
+
+</body>
+</html>
