@@ -1,2 +1,2 @@
 # davidtzai.github.io
-covers general language issues
+This site covers general language issues
