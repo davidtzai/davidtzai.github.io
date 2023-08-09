@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<script>
+function convertText() {
+  var input = document.getElementById("inputText");
+  var text = input.value;
+
+  text = text.replace(/~a/g, "ã");
+  text = text.replace(/~e/g, "ẽ");
+  text = text.replace(/~i/g, "ĩ");
+  text = text.replace(/~o/g, "õ");
+  
+  text = text.replace(/y/g, "ə");
+
+  text = text.replace(/th/g, "tʰ");
+  text = text.replace(/ph/g, "pʰ");
+  text = text.replace(/kh/g, "kʰ");
+  text = text.replace(/tsh/g, "tsʰ");
+  text = text.replace(/ng/g, "ŋ");
+
+  input.value = text;
+}
+</script>
+
+</head>
+<body>
+當點擊“臺語IPA轉換”按鈕時 
+<br>在編輯文本框的文本字符串中，<br>
+'~a' 轉換為 ã; '~e' 轉換為 ẽ; '~i' 轉換為 ĩ; '~o' 轉換為 õ;<br>
+'th' 轉換為 tʰ; 'ph' 轉換為 pʰ; 'kh' 轉換為 kʰ; 'tsh' 轉換為 tsʰ;<br>'y' 轉換為 ə; 'ng' 轉換為 ŋ
+<input type="text" id="inputText">
+
+<button onclick="convertText()">臺語IPA轉換</button>
+
+</body>
+</html
